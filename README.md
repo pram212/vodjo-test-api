@@ -2,6 +2,7 @@
 
 -   PHP >= 8.2
 -   composer
+-   Database Mysql/PostgreSQL
 -   izinkan ekxtensi sodium di php.ini dengan menghapus tanda ";" di baris extension=sodium. karena ada library yang membutuhkan ekstensi tersebut.
 
 ### Instalasi
@@ -12,7 +13,16 @@
 -   `composer install`
 -   steup env
     `cp .env.example .env`
-    atur koneksi database dan juga tambahkan kredential pusher berikut
+-   sesuaikan koneksi database di .env pada baris ini baik mysql atau postgresql :
+    ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=backend
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
+-   atur kredential pusher di .env berikut
     ```
     PUSHER_APP_ID=1929060
     PUSHER_APP_KEY=7dd70d197b37c90c4696
