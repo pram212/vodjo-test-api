@@ -13,7 +13,7 @@
 -   steup env
     `cp .env.example .env`
     atur koneksi database dan juga tambahkan kredential pusher berikut
-    ````
+    ```
     PUSHER_APP_ID=1929060
     PUSHER_APP_KEY=7dd70d197b37c90c4696
     PUSHER_APP_SECRET=dc5fc612b57de3ce3e26
@@ -21,7 +21,6 @@
     PUSHER_PORT=443
     PUSHER_SCHEME=https
     ```
-    ````
 -   `php artisan jwt:secret` untuk membuat key jwt
 -   `php artisan key:generate`
 -   `php artisan migrate`
