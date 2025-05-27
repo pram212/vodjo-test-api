@@ -25,9 +25,9 @@
 -   `php artisan optimize:clear`
 -   jalankan `php artisan db:seed UserSeeder` untuk membuat satu user
 -   untuk data dummy order Anda bisa menjalankan `php artisan db:seed OrderSeeder`. akan membuat 5000 order dengan masing-masing 5 item
--   `php artisan serve`
 -   buka terminal baru kemudian jalankan `php artisan queue:work` untuk menjalankan queue
--   setelah itu, buka alamat http://loclahost:8000 di browser
+-   `php artisan storage:link` untuk penyimpanan file excel
+-   `php artisan serve`
 
 ### API Endpoint
 
