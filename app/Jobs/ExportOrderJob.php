@@ -18,7 +18,7 @@ class ExportOrderJob implements ShouldQueue
 
     public function handle()
     {
-        $filename = 'exports/users_export_' . now()->timestamp . '.xlsx';
+        $filename = 'exports/order_export_' . now()->timestamp . '.xlsx';
 
         Excel::store(new OrderExport, $filename, 'public');
 
